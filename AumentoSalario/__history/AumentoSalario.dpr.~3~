@@ -1,0 +1,27 @@
+program AumentoSalario;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+  SalarioAnterior : Real;
+  Aumento : integer;
+  SalarioNovo : real;
+begin
+  write ('Digite o salario atual: ');
+  read (SalarioAnterior);
+
+  write ('Qual o percentual de aumento: ');
+  read (Aumento);
+
+  SalarioNovo := (SalarioAnterior * Aumento) /100;
+
+  write ('Salario reajustado é: ', SalarioNovo);
+  read();
+
+
+end.
